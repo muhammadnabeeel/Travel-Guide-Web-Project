@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+}
+.page{
+    display: grid;
+    grid-template-areas: 'header header header'
+        'main main main'
+        'left center right'
+        'footer footer footer';
+    overflow: hidden;
+}
+.page >div{
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+}
+.header{
+    grid-area: header;
+    overflow: hidden;
+}
+#text{
+    font-size: 700;
+    letter-spacing: 10px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-left: 25px;
+    float: left;
+}
+ul#menu li{
+	border-radius:25px;
+    display: block;
+    list-style: none;
+    padding: 25px 15px;
+    float: right;
+}
+#menu li:hover{
+    background-color: red;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.header img{
+    float: left;
+}
+.header a{
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.header h2{
+    color: #FF6600;
+}
+.main{
+    grid-area: main;
+    text-align: center;
+    overflow: hidden;
+}
+.main h2{
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 25px;
+    color: #CC0000
+}
+.left{
+    grid-area: left;
+    text-align: center;
+    overflow: hidden;
+}
+.center{
+    grid-area: center;
+    text-align: center;
+    overflow: hidden;
+}
+.right{
+    grid-area: right;
+    text-align: center;
+    overflow: hidden;
+}
+.footer{
+    grid-area: footer;
+    overflow: hidden;
+}
+.footer h3{
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 600;
+    font-weight: 600;
+    padding-top: 30px;
+    color: #fff;
+}
+ul#align li{
+    list-style: none;
+    display: inline;
+}
+#align li a{
+    text-decoration: none;
+}
+.footer-design{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+.footer-design .footer-left{
+	float: left;
+}
+.footer-design h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0 0 10px;
+}
+.footer-design h3 span{
+	color:  #5383d3;
+}
+.footer-design .links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.footer-design .links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-design .company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-design .footer-right{
+	float: right;
+}
+.footer-design .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+.footer-design form{
+	display: inline-block;
+}
+.footer-design form input,
+.footer-design form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 18px;
+}
+.motto{
+	color:  #8d9093;
+	font-size: 30px;
+	margin: 0;
+    letter-spacing: 15px;
+    padding-top: 10px;
+}
+.links{
+    text-align: center;
+}
+.company-name{
+    text-align: center;
+}
+.footer-design ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+.footer-design ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+.footer-design :-ms-input-placeholder{
+	color:  #5c666b;
+}
+.footer-design form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+.footer-design form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+.footer-design form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 1000px) {
+	.footer-design {
+		font: bold 14px sans-serif;
+	}
+	.footer-design .company-name{
+		font-size: 12px;
+	}
+	.footer-design form input,
+	.footer-design form textarea{
+		width: 250px;
+	}
+	.footer-design form button{
+		padding: 10px 35px;
+	}
+}
+@media (max-width: 800px) {
+	.footer-design{
+		padding: 30px;
+	}
+	.footer-design .footer-left,
+	.footer-design .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	.footer-design .footer-left{
+		margin-bottom: 40px;
+	}
+	.footer-design form{
+		margin-top: 30px;
+	}
+	.footer-design form{
+		display: block;
+	}
+	.footer-design form button{
+		float: none;
+	}
+}

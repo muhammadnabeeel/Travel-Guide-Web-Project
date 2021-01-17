@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Travel and Tourism</title>
+    <link rel="stylesheet" href="project.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        function main(cover)
+        {
+            window.location = cover.value+".html";
+        }
+    </script>
+</head>
+<body>
+    <div class="bg">
+        <p id=para>GUIDE TO THE NORTHERN PAKISTAN</p>
+        <p>Where you want to go</p>
+        <div class="center">
+		<center>
+				<select style="display: inline-block" name="sources" id="sources" class="custom-select sources" placeholder="Source Type" onchange="javascript:main(this)">
+                <option value="Project">Select Location</option>
+                <option value="Abbottabad">Abbottabad</option>
+                <option value="Gilgit">Gilgit</option>
+                <option value="Hunza">Hunza</option>
+                <option value="Skardu">Skardu</option>
+                <option value="Chitral">Chitral</option>
+				</select>
+				<a href="../Project/logos/pakMap.png"><img style="display: inline-block" name="opt_map" src="../Project/logos/opt_map_logo.png" 
+							width="10%" height="10%"/></a>
+		
+		</center>
+        </div>
+		
+    </div>
+</body>
+</html>

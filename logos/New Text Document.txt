@@ -1,0 +1,10 @@
+		<div class="map">
+			<img src="../Project/logos/pakMap.png" alt="" usemap="#image_map" width="50%" height="40%">
+			<map name="image_map">
+				<area  alt="Abbottabad" title="Abbottabad" href="abbottabad.html" coords="784,161,837,213" shape="rect">
+				<area  alt="Gilgit" title="Gilgit" href="gilgit.html" coords="787,102,836,143" shape="rect">
+				<area  alt="Hunza" title="Hunza" href="hunza.html" coords="814,40,860,79" shape="rect">
+				<area  alt="Skardu" title="Skardu" href="skardu.html" coords="905,123,950,159" shape="rect">
+				<area  alt="Chitral" title="Chitral" href="chitral.html" coords="647,113,694,149" shape="rect">
+			</map>
+		</div>

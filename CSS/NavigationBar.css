@@ -1,0 +1,57 @@
+#HomeLogo{
+	display:inline-block;
+	width:22px; 
+	height:4%;
+}
+#GalleryLogo{
+	display:inline-block;
+	width:25px; 
+	height:4%;
+}
+
+.menu {
+    overflow: auto;
+    background-color: black;
+    padding-top: 12px;
+	
+}
+.menu a {
+	border-radius:25px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: auto;
+}
+.dropdown .dropbtn {
+	border-radius:25px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.menu a:hover, .dropdown:hover .dropbtn {
+    background-color: #CC0000;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+	
+}
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+	background-color:black;
+	min-width: 200px;
+	border-radius:0px;
+}
+.dropdown-content a:hover {
+    background-color: #CC0000;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
